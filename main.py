@@ -16,8 +16,8 @@ with youtube_dl.YoutubeDL(ydl_opts) as ydl:
 try:
     for file in os.listdir("./"):
         if file.endswith(".mp3"):
-            shutil.move(file, r"C:\Users\Admin\Desktop\canzoni") #scegliere il file dove mettere
-                                                                 #la propria canzone
+            shutil.move(file, r"C:\Users\Admin\Desktop\canzoni") #scegliere la cartella dove mettere
+                                                                 #la canzone
 except:
     print("file già esistente")
     os.remove(file)
